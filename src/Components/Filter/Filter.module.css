@@ -1,0 +1,42 @@
+.filterContainer {
+    width: 100%;
+    background-color: #6200EE;
+    text-align: center;
+}
+
+.filterItem {
+    padding-top: 20px;
+}
+
+.filterItem>span, .filterItem>input {
+    display: inline-block;
+    text-align: left;
+}
+
+.filterItem>span {
+    width: 7%;
+    padding: 10px 0px 10px 10px;
+}
+
+.filterItem>input {
+    width: 49%;
+}
+
+.filterItem>input[type='text'], .filterItem>input[type='number'] {
+    padding: 12px 20px;
+    margin: 5px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    color: rgb(41, 41, 90);
+    font-size: 15px;
+}
+
+.filterItem>input[type='text']:focus {
+    border: 3px solid #555;
+}
+
+.itemCheckBox {
+    padding: 20px;
+}
