@@ -1,8 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getPeople } from '../../redux/ListPeople-Reducer';
+import { getPeople } from '../../redux/MainStore-Reducer';
 import Filter from '../Filter/Filter';
-import People from '../People/People';
+import Person from '../Person/Person';
+
 import Preloader from '../Preloader/Preloader';
 import { toLower } from '../UTILS/Utils';
 import styles from './ListOfPeople.module.css';
@@ -26,7 +27,7 @@ class ListOfPeople extends React.Component {
                 )}
                 <Filter />
                 <div className={styles.wrapPeople}>
-                    {filtredPeople.map(p => <People key={p.name} people={p} />)}
+                    {filtredPeople.map(person => <Person key={person.name} person={person} />)}
                 </div>
             </div>
         )

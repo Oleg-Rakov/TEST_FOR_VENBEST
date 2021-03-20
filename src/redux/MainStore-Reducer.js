@@ -8,7 +8,7 @@ const TOGGLE_MAN_VISIBLE = 'TOGGLE_MAN_VISIBLE';
 const TOGGLE_WOMAN_VISIBLE = 'TOGGLE_WOMAN_VISIBLE';
 
 
-let initialState = {
+const initialState = {
     peopleInfo: [],
     filterByName: '',
     filterBySurName: '',
@@ -18,7 +18,7 @@ let initialState = {
     isLoad: true,
 }
 
-let listPeopleReducer = (state = initialState, action) => {
+const mainStoreReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_PEOPLE:
             return {
@@ -56,31 +56,31 @@ let listPeopleReducer = (state = initialState, action) => {
     }
 }
 
-export let setPeople = (people) => ({
+export const setPeople = (people) => ({
     type: SET_PEOPLE,
     people
 })
 
-export let setNameFilter = (name) => ({
+export const setNameFilter = (name) => ({
     type: SET_NAME_FILTER,
     name
 })
 
-export let setSurNameFilter = (surName) => ({
+export const setSurNameFilter = (surName) => ({
     type: SET_SURNAME_FILTER,
     surName
 })
 
-export let setAgeFilter = (age) => ({
+export const setAgeFilter = (age) => ({
     type: SET_AGE_FILTER,
     age
 })
 
-export let setManVisible = () => ({
+export const setManVisible = () => ({
     type: TOGGLE_MAN_VISIBLE
 })
 
-export let setWomanVisible = () => ({
+export const setWomanVisible = () => ({
     type: TOGGLE_WOMAN_VISIBLE
 })
 
@@ -122,4 +122,4 @@ export const toggleWomanVisible = () => {
 }
 
 
-export default listPeopleReducer;
+export default mainStoreReducer;

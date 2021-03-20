@@ -1,6 +1,6 @@
 import * as axios from 'axios';
 
-let instance = axios.create({
+const instance = axios.create({
     baseURL: 'https://venbest-test.herokuapp.com/'
 })
 

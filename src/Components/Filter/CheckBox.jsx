@@ -3,11 +3,11 @@ import styles from './Filter.module.css';
 
 const CheckBox = ({ toggleWomanVisible, toggleManVisible, isManVisible, isWomanVisible }) => {
 
-    let onSelectMan = () => {
+    const onSelectMan = () => {
         toggleManVisible();
     }
 
-    let onSelectWoman = () => {
+    const onSelectWoman = () => {
         toggleWomanVisible();
     }
 

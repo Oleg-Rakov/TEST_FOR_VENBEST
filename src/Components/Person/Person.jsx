@@ -1,19 +1,19 @@
 import React from 'react';
-import styles from './People.module.css';
+import styles from './Person.module.css';
 
 const SEX_MAP = {
     f: 'Женский',
     m: 'Мужской'
 }
 
-let People = ({ people, setActiveFilter }) => {
+const Person = ({ person }) => {
     return (
         <div className={styles.listContainer}>
             <ul className={styles.listPeople}>
-                <li>{`${people.name} ${people.lastname} Возраст: ${people.age} Пол: ${SEX_MAP[people.sex]}`}</li>
+                <li>{`${person.name} ${person.lastname} Возраст: ${person.age} Пол: ${SEX_MAP[person.sex]}`}</li>
             </ul>
         </div>
     )
 }
 
-export default People;
+export default Person;

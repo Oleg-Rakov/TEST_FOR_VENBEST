@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { toggleWomanVisible, toggleManVisible, onChangeName, onChangeSurName, onChangeAge } from '../../redux/ListPeople-Reducer';
+import { toggleWomanVisible, toggleManVisible, onChangeName, onChangeSurName, onChangeAge } from '../../redux/MainStore-Reducer';
 import CheckBox from './CheckBox';
 import styles from './Filter.module.css';
 import FilterAge from './FilterAge';
